@@ -3,7 +3,7 @@
 #                                                         ::::::::             #
 #    Makefile                                           :+:    :+:             #
 #                                                      +:+                     #
-#    By: lvan-gef <lvan-gef@student.codam.n>          +#+                      #
+#    By: lvan-gef <lvan-gef@student.codam.nl>          +#+                     #
 #                                                    +#+                       #
 #    Created: 2022/10/25 16:26:47 by lvan-gef      #+#    #+#                  #
 #    Updated: 2023/03/02 15:40:58 by lvan-gef      ########   odam.nl          #
