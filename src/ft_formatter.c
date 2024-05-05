@@ -6,7 +6,7 @@
 /*   By: lvan-gef <lvan-gef@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/02/12 17:09:47 by lvan-gef      #+#    #+#                 */
-/*   Updated: 2024/05/05 02:04:32 by lvan-gef      ########   odam.nl         */
+/*   Updated: 2024/05/05 02:33:52 by lvan-gef      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,6 @@ int	format_int(int size, size_t upper, size_t base)
 	int		counter;
 	size_t	new_size;
 
-	counter = 0;
 	result = 0;
 	if (size < 0)
 	{
