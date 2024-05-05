@@ -6,11 +6,11 @@
 /*   By: lvan-gef <lvan-gef@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/02/12 17:42:54 by lvan-gef      #+#    #+#                 */
-/*   Updated: 2023/03/02 15:40:23 by lvan-gef      ########   odam.nl         */
+/*   Updated: 2024/05/05 02:08:49 by lvan-gef      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "../include/ft_printf.h"
 
 int	write_str(char *s)
 {
