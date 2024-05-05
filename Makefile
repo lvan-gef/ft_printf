@@ -10,28 +10,36 @@
 #                                                                              #
 # **************************************************************************** #
 
-CC = gcc
-CFLAGS = -c -Wall -Werror -Wextra
+CC = cc
+CFLAGS = -Wall -Werror -Wextra
+
+# Root source directory
+SRC = src/
 
 # dirs
 OBJDIR = obj/
 
-CFILES = ft_printf.c ft_formatter.c ft_writers.c
+# c files
+# CFILES = ft_formatter.c ft_printf.c ft_writers.c
+CFILES = $(SRC)ft_formatter.c $(SRC)ft_printf.c $(SRC)ft_writers.c
+
+# objects
 OBJECTS = $(CFILES:%.c=$(OBJDIR)%.o)
-INCLUDE = ft_printf.h
+
+HEADERS = -I include
 NAME = libftprintf.a
 LIB = ar rcs
 
 .PHONY: all clean fclean re
 
 $(NAME): $(OBJECTS) $(INCLUDE)
-	$(LIB) $(NAME) $(OBJECTS)
+	$(LIB) $(NAME) $(OBJECTS) -s
 
 all: $(NAME)
 
-$(OBJDIR)%.o: %.c
-	@mkdir -p $(OBJDIR)
-	$(CC) $(CFLAGS) -o $@ $<
+$(OBJDIR)src%.o: $(SRC)%.c
+	@mkdir -p $(OBJDIR)src
+	$(CC) $(HEADERS) -c $(CFLAGS) -o $@ $<
 
 clean:
 	rm -rf $(OBJDIR)
