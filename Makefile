@@ -17,6 +17,7 @@ SRC = src/
 OBJDIR = obj/
 
 CFILES = $(SRC)ft_formatter.c $(SRC)ft_printf.c $(SRC)ft_writers.c
+
 OBJECTS = $(CFILES:%.c=$(OBJDIR)%.o)
 
 HEADERS = -I include
