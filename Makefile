@@ -11,19 +11,12 @@
 # **************************************************************************** #
 
 CC = cc
-CFLAGS = -Wall -Werror -Wextra
+CFLAGS = -Wall -Werror -Wextra -Wshadow -Wpedantic
 
-# Root source directory
 SRC = src/
-
-# dirs
 OBJDIR = obj/
 
-# c files
-# CFILES = ft_formatter.c ft_printf.c ft_writers.c
 CFILES = $(SRC)ft_formatter.c $(SRC)ft_printf.c $(SRC)ft_writers.c
-
-# objects
 OBJECTS = $(CFILES:%.c=$(OBJDIR)%.o)
 
 HEADERS = -I include
